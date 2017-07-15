@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#ef9a9a</color>
-    <color name="colorPrimaryDark">#ba6b6c</color>
-    <color name="colorAccent">#ffcccb</color>
+    <color name="colorPrimary">#bcaaa4</color>
+    <color name="colorPrimaryDark">#8c7b75</color>
+    <color name="colorAccent">#efdcd5</color>
+
+    <!-- Text color for the details of the news in the list item -->
+    <color name="textColor">#bdbdbd</color>
+
+
+
+
 </resources>

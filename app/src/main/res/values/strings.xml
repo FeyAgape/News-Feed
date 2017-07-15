@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Breaking News</string>
+
+    <!-- Text to display in the list when there are no newses [CHAR LIMIT=NONE] -->
+    <string name="no_news">No news found.</string>
+
+    <!-- Error message when there is no internet connectivity [CHAR LIMIT=NONE] -->
+    <string name="no_internet_connection">No internet connection.</string>
+
+    <!-- Error message for issue with network request [CHAR LIMIT=NONE] -->
+    <string name="http_request_failed">HTTP request failed.</string>
+    <string name="url_build_failed">Couldn\'t build URL.</string>
+    <string name="error_code">Error response code:</string>
+    <string name="failed_getting_json">Failed to retrieve the JSON result.</string>
+    <string name="failed_parsing_json">Failed to parse the news JSON results</string>
+
 </resources>

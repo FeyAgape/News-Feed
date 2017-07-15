@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/medium">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:textStyle="bold"
+        android:padding="@dimen/mini"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/heading_body_regular"
+        tools:text="Long placeholder location that should wrap to more than 2 lines of text" />
+
+    <TextView
+        android:id="@+id/section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:maxLines="1"
+        android:padding="@dimen/mini"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/button_text_medium"
+        tools:text="Digital" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/caption_small"
+        tools:text="Mar 6, 2010" />
+
+
+</LinearLayout>
