@@ -10,17 +10,17 @@ package com.example.android.newsfeed;
 public class News {
 
     /**
-     * Name of the News Section
+     * Title of the News item
      */
     private String mTitle;
 
     /**
-     * Title of the News item
+     * Name of the News Section
      */
     private String mSection;
 
     /**
-     * Time of the News item
+     * Date and Time of the News item
      */
     private String mPublished;
 
@@ -32,11 +32,10 @@ public class News {
     /**
      * Constructs a new {@link News} object.
      *
-     * @param title          is the title of the news item
-     * @param section           is the section of the new
-     * @param published is the time in milliseconds (from the Epoch) when the
-     *                           earthquake happened
-     * @param url                is the website URL to find more details about the earthquake
+     * @param title     is the title of the news item
+     * @param section   is the section of the news
+     * @param published is the time and date the news was published
+     * @param url       is the website URL to find more details about the earthquake
      */
     public News(String title, String section, String published, String url) {
         mTitle = title;
@@ -45,11 +44,13 @@ public class News {
         mUrl = url;
     }
 
-    public String getTitle()  {
+    public String getTitle() {
         return mTitle;
     }
 
-    public String getSection(){ return mSection; }
+    public String getSection() {
+        return mSection;
+    }
 
     public String getPublished() {
         return mPublished;
