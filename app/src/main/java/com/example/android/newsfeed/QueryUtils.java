@@ -81,6 +81,9 @@ public final class QueryUtils {
             urlConnect.setRequestMethod("GET");
             urlConnect.connect();
 
+
+            // If the request was successful (response code 200),
+            // then read the input stream and parse the response.
             if (urlConnect.getResponseCode() == 200) {
                 inputStream = urlConnect.getInputStream();
                 jsonResponse = readFromStream(inputStream);

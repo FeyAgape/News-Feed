@@ -82,18 +82,20 @@ public class NewsActivity extends AppCompatActivity
         newsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                // Find the current news that was clicked on
-                News currentNews = mAdapter.getItem(position);
 
-                // Convert the String URL into a URI object (to pass into the Intent constructor)
-                Uri newsUri = Uri.parse(currentNews.getUrl());
 
-                // Create a new intent to view the news URI
-                Intent websiteIntent = new Intent(Intent.ACTION_VIEW, newsUri);
+                    // Find the current news that was clicked on
+                    News currentNews = mAdapter.getItem(position);
 
-                // Send the intent to launch a new activity
-                startActivity(websiteIntent);
-            }
+                    // Convert the String URL into a URI object (to pass into the Intent constructor)
+                    Uri newsUri = Uri.parse(currentNews.getUrl());
+
+                    // Create a new intent to view the news URI
+                    Intent websiteIntent = new Intent(Intent.ACTION_VIEW, newsUri);
+
+                    // Send the intent to launch a new activity
+                    startActivity(websiteIntent);
+                }
         });
 
         // Get a reference to the ConnectivityManager to check state of network connectivity
@@ -119,7 +121,9 @@ public class NewsActivity extends AppCompatActivity
 
             // Update empty state with no connection error message
             mEmptyStateTextView.setText(R.string.no_internet_connection);
+
         }
+
     }
 
     @Override
@@ -143,6 +147,9 @@ public class NewsActivity extends AppCompatActivity
 
         // Set empty state text to display "No news found."
         mEmptyStateTextView.setText(R.string.no_news);
+
+        mEmptyStateTextView.setVisibility(View.VISIBLE);
+
         // Clear the adapter of previous news data
         mAdapter.clear();
 
