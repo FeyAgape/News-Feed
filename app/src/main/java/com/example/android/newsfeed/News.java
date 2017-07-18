@@ -7,7 +7,7 @@ package com.example.android.newsfeed;
 /**
  * An {@link News} object contains information related to a news item.
  */
-public class News {
+final public class News {
 
     /**
      * Title of the News item

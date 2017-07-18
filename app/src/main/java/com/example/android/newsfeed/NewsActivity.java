@@ -63,10 +63,10 @@ public class NewsActivity extends AppCompatActivity
         setContentView(R.layout.news_activity);
 
         // Find a reference to the {@link ListView} in the layout
-        ListView earthquakeListView = (ListView) findViewById(R.id.list);
+        ListView newsListView = (ListView) findViewById(R.id.list);
 
         mEmptyStateTextView = (TextView) findViewById(R.id.empty_view);
-        earthquakeListView.setEmptyView(mEmptyStateTextView);
+        newsListView.setEmptyView(mEmptyStateTextView);
 
 
         // Create a new adapter that takes an empty list of news as input
@@ -74,12 +74,12 @@ public class NewsActivity extends AppCompatActivity
 
         // Set the adapter on the {@link ListView}
         // so the list can be populated in the user interface
-        earthquakeListView.setAdapter(mAdapter);
+        newsListView.setAdapter(mAdapter);
 
 
         // Set an item click listener on the ListView, which sends an intent to a web browser
         // to open a website with more information about the selected earthquake.
-        earthquakeListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        newsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 // Find the current news that was clicked on
